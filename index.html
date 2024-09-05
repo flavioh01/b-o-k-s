@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria de Terror</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Livraria de Terror</h1>
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Livros</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Cascata -->
+    <nav class="dropdown-menu">
+        <ul>
+            <li><a href="#">Gêneros</a>
+                <ul>
+                    <li><a href="#">Terror</a></li>
+                    <li><a href="#">Suspense</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Seção dos Livros -->
+    <section id="books" class="book-list">
+        <div class="book" onclick="toggleSynopsis('book1')">
+            <img src="exorcista.jpg" alt="O Exorcista">
+            <h2>O Exorcista</h2>
+            <p class="synopsis" id="book1">Publicado em 1971, este é um clássico do gênero de terror...</p>
+        </div>
+        <div class="book" onclick="toggleSynopsis('book2')">
+            <img src="birdbox.jpg" alt="Bird Box">
+            <h2>Bird Box</h2>
+            <p class="synopsis" id="book2">Lançado em 2014, este thriller psicológico de terror...</p>
+        </div>
+        <div class="book" onclick="toggleSynopsis('book3')">
+            <img src="it.jpg" alt="It: A Coisa">
+            <h2>It: A Coisa</h2>
+            <p class="synopsis" id="book3">Publicado em 1986, este é um dos romances mais famosos de King...</p>
+        </div>
+        <div class="book" onclick="toggleSynopsis('book4')">
+            <img src="homemdegiz.jpg" alt="O Homem de Giz">
+            <h2>O Homem de Giz</h2>
+            <p class="synopsis" id="book4">Lançado em 2018, este thriller psicológico é sobre um grupo de amigos...</p>
+        </div>
+        <div class="book" onclick="toggleSynopsis('book5')">
+            <img src="estradadanoite.jpg" alt="A Estrada da Noite">
+            <h2>A Estrada da Noite</h2>
+            <p class="synopsis" id="book5">Publicado em 2013, este romance de terror segue um ex-detetive...</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Flavio e Sara</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
